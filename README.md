@@ -8,11 +8,13 @@ To tackle the problem of predicting whether a customer will subscribe to an insu
 
 This Streamlit application allows users to explore various aspects of a marketing dataset and predict customer conversion based on different features. The application consists of two main sections:
 
-##Analysis: Visualize and analyze the dataset to gain insights into customer demographics, job roles, marital status, call types, and more.
-##Prediction: Input customer data and receive predictions on whether the customer will convert based on a pre-trained model.
+## Analysis: Visualize and analyze the dataset to gain insights into customer demographics, job roles, marital status, call types, and more.
+
+
+## Prediction: Input customer data and receive predictions on whether the customer will convert based on a pre-trained model.
 
 ### UNDERSTANDING THE DATA:
-###Features
+### Features
 AGE ANALYSIS: Visualizes the distribution of customer ages and their conversion outcomes.
 JOB ANALYSIS: Analyzes the impact of different job roles on customer conversion.
 MARITAL ANALYSIS: Examines how marital status affects conversion rates.
@@ -22,7 +24,8 @@ MONTH ANALYSIS: Examines conversion rates based on the month of the call.
 PREVIOUS OUTCOME ANALYSIS: Looks at how previous call outcomes impact conversion rates.
 PREDICTION FORM: Allows users to input customer details and get a prediction on conversion likelihood.
 
-##Installation
+## Installation:
+
 Prerequisites
 Ensure you have Python 3.7 or later installed. You will also need the following Python packages:
 Streamlit
