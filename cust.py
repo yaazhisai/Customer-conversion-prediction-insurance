@@ -230,24 +230,24 @@ elif option=='PREDICTION':
         col1, col2, col3 = st.columns([5, 1,5])
         with col1:
             st.write(' ')
-            job=st.selectbox('JOB',j,help='')
-            mar_st=st.selectbox('MARITAL',mar,help='')
-            edu=st.selectbox('EDUCATION',e,help='')
-            call=st.selectbox('CALL TYPE',c1,help='')
-            d1=st.selectbox('DAY',d,help='')
+            job=st.selectbox('JOB',j,help='Job role of the customer.')
+            mar_st=st.selectbox('MARITAL',mar,help='Marital status of the customer')
+            edu=st.selectbox('EDUCATION',e,help='Education level of the customer')
+            call=st.selectbox('CALL TYPE',c1,help='Type of call made')
+            d1=st.selectbox('DAY',d,help='Day of the week the call made')
             d_en=df_new1[df_new1['day']==d1]['day'].iloc[0]
             
             
         with col3:
             st.write('  ')
-            mon_en=st.selectbox('MONTH',mon,help='')
-            ag=st.selectbox('AGE',age,help='')
+            mon_en=st.selectbox('MONTH',mon,help='Month of the year.')
+            ag=st.selectbox('AGE',age,help='Age of the customer')
             ag_en=df_new1[df_new1['age']==ag]['age'].iloc[0]
-            dur=st.selectbox('CALL DURATION',dur,help='')
+            dur=st.selectbox('CALL DURATION',dur,help='Duration of the call.')
             dur_en=df_new1[df_new1['dur']==dur]['dur'].iloc[0]
-            num=st.selectbox('NO.OF CALLS',num,help='')
+            num=st.selectbox('NO.OF CALLS',num,help=' Number of calls made to the customer.')
             num_en=df_new1[df_new1['num_calls']==num]['num_calls'].iloc[0]
-            pr_o=st.selectbox('PREV OUTCOME',prev,help='')
+            pr_o=st.selectbox('PREV OUTCOME',prev,help='Outcome of the previous call.')
             st.write(' ')
             st.write('  ')
             submit_bt = st.form_submit_button(label='Predict Customer Conversion',use_container_width=150)
