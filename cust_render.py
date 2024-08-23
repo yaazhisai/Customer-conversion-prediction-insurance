@@ -22,7 +22,7 @@ st.markdown("""
 st.markdown("""
 	<style>
 	.stSelectbox:first-of-type > div[data-baseweb="select"] > div {
-	      background-color:steelblue;
+	      background-color:grey;
     	      padding: 10px;
 	}
 	</style>
