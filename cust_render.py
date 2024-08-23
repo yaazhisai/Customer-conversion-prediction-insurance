@@ -19,14 +19,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-	<style>
-	.stSelectbox:first-of-type > div[data-baseweb="select"] > div {
-	      background-color:grey;
-    	      padding: 10px;
-	}
-	</style>
-""", unsafe_allow_html=True)
 
 df_new1=pd.read_csv('df.csv')
 
